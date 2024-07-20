@@ -1,18 +1,4 @@
-scoreboard objectives add value dummy
-scoreboard objectives add velocity.x dummy
-scoreboard objectives add velocity.y dummy
-scoreboard objectives add velocity.z dummy
-
-scoreboard objectives add velocity.last.x dummy
-scoreboard objectives add velocity.last.y dummy
-scoreboard objectives add velocity.last.z dummy
-
 scoreboard objectives add team dummy
-scoreboard players set 1 value 1
-scoreboard players set -1 value -1
-scoreboard players set bounce value -5
-
-# TEAMS
 execute run team add yellow
 execute run team modify yellow color aqua
 execute run team add red

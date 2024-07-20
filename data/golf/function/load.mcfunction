@@ -1,2 +1,2 @@
-execute run function golf:init
-execute run say Reloaded
+execute run function golf:init/init
+execute run say Datapack Reloaded!
