@@ -8,6 +8,13 @@
             "effect": {
                 "type": "run_function",
                 "function": "golf:summon_stand"                
+            },
+            "requirements": {
+                "condition": "location_check",
+                "predicate": {
+                    "block": {"blocks": "#air"}
+                },
+                "offsetY": 1
             }
         }]
     },
