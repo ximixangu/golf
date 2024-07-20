@@ -1,0 +1,2 @@
+execute as @s store result score @s velocity.x run data get entity @s Motion[0] 10
+execute as @s unless score @s velocity.x matches 0 store result entity @s Motion[1] double 1 run scoreboard players get 1 value

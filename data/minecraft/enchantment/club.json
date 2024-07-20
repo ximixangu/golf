@@ -1,0 +1,38 @@
+{
+    "anvil_cost": 0,
+    "description": {
+        "text": ""
+    },
+    "effects": {
+        "post_attack": [{
+            "enchanted": "attacker",
+            "affected": "victim",
+            "effect": {
+                "type": "run_function",
+                "function": "tracker:add_score"                
+            },
+            "requirements": {
+                "condition": "value_check",
+                "value": {"type": "score", "target": "attacker", "score": "team" },
+                "range": {
+                    "min": {"type": "score", "target": "this", "score": "team"}, 
+                    "max": {"type": "score", "target": "this", "score": "team"}
+                }
+            }
+        }]
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 1
+    },
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 1
+    },
+    "slots": [
+        "mainhand"
+    ],
+    "supported_items": "stick",
+    "weight": 1,
+    "max_level": 1
+}

@@ -1,0 +1,35 @@
+{
+    "anvil_cost": 0,
+    "description": {
+        "text": "Knockup"
+    },
+    "effects": {
+        "post_attack": [{
+            "enchanted": "attacker",
+            "affected": "victim",
+            "effect": {
+                "type": "run_function",
+                "function": "golf:knock_up"                
+            },
+            "requirements": {
+                "condition": "entity_properties",
+                "entity": "direct_attacker",
+                "predicate": { "movement": { "fall_distance": { "min": 0.9 }} }
+            }
+        }]
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 1
+    },
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 1
+    },
+    "slots": [
+        "mainhand"
+    ],
+    "supported_items": "nautilus_shell",
+    "weight": 1,
+    "max_level": 1
+}

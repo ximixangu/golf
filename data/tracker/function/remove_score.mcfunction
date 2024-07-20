@@ -1,0 +1,1 @@
+execute store result score @s Score run scoreboard players operation @s Score -= 1 value
