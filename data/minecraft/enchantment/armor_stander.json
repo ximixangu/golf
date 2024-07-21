@@ -10,11 +10,24 @@
                 "function": "golf:summon_stand"                
             },
             "requirements": {
-                "condition": "location_check",
-                "predicate": {
-                    "block": {"blocks": "#air"}
-                },
-                "offsetY": 1
+                "condition": "all_of",
+                "terms": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {"flags": { "is_sneaking": true }}
+                        },
+                        {   
+                            "condition": "location_check",
+                            "predicate": { "block": {"blocks": "#air"} },
+                            "offsetY": 1 
+                        },
+                        {   
+                            "condition": "location_check",
+                            "predicate": { "block": {"blocks": "#air"} },
+                            "offsetY": 2 
+                        }
+                    ]
             }
         }]
     },
