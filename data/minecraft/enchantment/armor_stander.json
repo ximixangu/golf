@@ -7,7 +7,7 @@
         "hit_block": [{
             "effect": {
                 "type": "run_function",
-                "function": "golf:summon_stand"                
+                "function": "golf:enchantments/summon_stand"       
             },
             "requirements": {
                 "condition": "all_of",

@@ -5,3 +5,4 @@ execute as @s run give @s iron_hoe[unbreakable={}, enchantments={levels:{"minecr
 execute as @s run give @s diamond_hoe[unbreakable={}, enchantments={levels:{"minecraft:knockback":9, "club":1}}] 1
 execute as @s run give @s fishing_rod[unbreakable={}, enchantments={"unbreaking":10}] 1
 execute as @s run give @s brush[unbreakable={}, enchantments={levels:{"minecraft:armor_stander":1}}] 1
+execute as @s run give @s slime_ball[enchantments={levels:{"minecraft:slimey":1}}] 1

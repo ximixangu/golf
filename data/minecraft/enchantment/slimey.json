@@ -1,0 +1,30 @@
+{
+    "anvil_cost": 0,
+    "description": {
+        "text": "Slimey"
+    },
+    "effects": {
+        "post_attack": [{
+            "effect": {
+                "type": "run_function",
+                "function": "golf:enchantments/slime_hit"
+            },
+            "affected": "victim",
+            "enchanted": "attacker"
+        }]
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 1
+    },
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 1
+    },
+    "slots": [
+        "any"
+    ],
+    "supported_items": "#minecraft:enchantable/sword",
+    "weight": 1,
+    "max_level": 1
+}
