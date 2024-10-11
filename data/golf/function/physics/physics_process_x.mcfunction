@@ -1,2 +1,2 @@
-execute unless score @s velocity.last.x matches -10..10 store result entity @s Motion[0] double 0.001 run scoreboard players operation @s velocity.last.x *= bounce value
+execute as @s[tag=ball, tag=slimey] unless score @s velocity.last.x matches -10..10 store result entity @s Motion[0] double 0.001 run scoreboard players operation @s velocity.last.x *= bounce value
 execute unless score @s velocity.last.x matches -10..10 as @s at @s run playsound minecraft:block.stone.hit hostile @a ~ ~ ~ 1

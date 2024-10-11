@@ -1,0 +1,35 @@
+{
+    "anvil_cost": 0,
+    "description": {
+        "text": ""
+    },
+    "effects": {
+        "minecraft:post_attack": [{
+            "enchanted": "attacker",
+            "affected": "victim",
+            "effect": {
+                "type": "run_function",
+                "function": "golf:physics/jump_hit"                
+            },
+            "requirements": {
+                "condition": "entity_properties",
+                "entity": "attacker",
+                "predicate": {"flags": {"is_on_ground": false}}
+            }
+        }]
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 1
+    },
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 1
+    },
+    "slots": [
+        "mainhand"
+    ],
+    "supported_items": "stick",
+    "weight": 1,
+    "max_level": 1
+}
