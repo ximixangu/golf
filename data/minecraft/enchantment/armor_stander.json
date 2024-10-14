@@ -7,7 +7,7 @@
         "hit_block": [{
             "effect": {
                 "type": "run_function",
-                "function": "golf:enchantments/summon_stand"       
+                "function": "golf:enchantments/summon_stand/summon_stand"       
             },
             "requirements": {
                 "condition": "all_of",
@@ -16,16 +16,6 @@
                             "condition": "entity_properties",
                             "entity": "this",
                             "predicate": {"flags": { "is_sneaking": true }}
-                        },
-                        {   
-                            "condition": "location_check",
-                            "predicate": { "block": {"blocks": "#air"} },
-                            "offsetY": 1 
-                        },
-                        {   
-                            "condition": "location_check",
-                            "predicate": { "block": {"blocks": "#air"} },
-                            "offsetY": 2 
                         }
                     ]
             }
