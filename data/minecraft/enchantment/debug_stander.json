@@ -1,0 +1,28 @@
+{
+    "anvil_cost": 0,
+    "description": {
+        "text": "Armor Stand Shooter"
+    },
+    "effects": {
+        "hit_block": [{
+            "effect": {
+                "type": "run_function",
+                "function": "golf:enchantments/summon_stand/arrow_summon_stand"       
+            }
+        }]
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 1
+    },
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 1
+    },
+    "slots": [
+        "any"
+    ],
+    "supported_items": "#minecraft:enchantable/bow",
+    "weight": 1,
+    "max_level": 1
+}

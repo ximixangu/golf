@@ -1,5 +1,7 @@
 # constant values
 scoreboard objectives add value dummy
+scoreboard objectives add invalid_block dummy
+scoreboard objectives add valid_block dummy
 scoreboard objectives add velocity.x dummy
 scoreboard objectives add velocity.y dummy
 scoreboard objectives add velocity.z dummy

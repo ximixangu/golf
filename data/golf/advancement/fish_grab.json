@@ -16,6 +16,6 @@
       }
     },
     "rewards": {
-      "function": "golf:enchantments/grab_armor_stand"
+      "function": "golf:grab_armor_stand"
     }
   }

@@ -1,7 +1,7 @@
 {
     "anvil_cost": 0,
     "description": {
-        "text": ""
+        "text": "Knockup I"
     },
     "effects": {
         "minecraft:post_attack": [{

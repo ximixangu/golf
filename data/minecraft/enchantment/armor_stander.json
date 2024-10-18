@@ -16,6 +16,10 @@
                             "condition": "entity_properties",
                             "entity": "this",
                             "predicate": {"flags": { "is_sneaking": true }}
+                        },
+                        {
+                            "condition": "location_check",
+                            "predicate": {"block": {"blocks": "iron_trapdoor"}}
                         }
                     ]
             }
