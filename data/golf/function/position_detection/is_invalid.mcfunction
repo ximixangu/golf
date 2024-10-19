@@ -10,4 +10,5 @@ execute as @s at @s run tp @s ~ ~1 ~ facing entity @p
 execute as @s at @s run particle portal ~ ~1 ~ 0.1 1 0.1 1 30 normal
 execute as @s run attribute @s generic.knockback_resistance base set 0
 execute as @s run tag @s remove moving
+execute as @s run tag @s remove moving2
 execute at @s run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 5

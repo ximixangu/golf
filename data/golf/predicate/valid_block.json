@@ -1,11 +1,14 @@
 {
-	"condition": "minecraft:all_of",
+	"condition": "minecraft:any_of",
 	"terms": [
 		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-				"stepping_on": {
+			"condition": "all_of",
+			"terms": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+					"stepping_on": {
 					"block": {
 						"blocks": [
 							"minecraft:moss_carpet",
@@ -21,40 +24,58 @@
 							"minecraft:orange_concrete_powder",
 							"iron_trapdoor",
 							"oak_trapdoor",
+							"bubble_column",
                             "void_air"
 						]
 					}
-				}
-			}
-		},
-		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-				"movement": {
-					"horizontal_speed": 0
-				}
-			}
-		},
-        {
-			"condition": "minecraft:any_of",
-            "terms": [
-                {
+					}
+					}
+				},
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"movement": {
+							"horizontal_speed": 0
+						}
+					}
+				},
+				{
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "flags": {"is_on_ground": true}
                     }
-                },
+                }
+			]
+		},
+		{
+			"condition": "minecraft:all_of",
+            "terms": [
+                {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"movement": {
+							"horizontal_speed": 0
+						}
+					}
+				},
                 {
                     "condition": "entity_properties",
                     "entity": "this",
                     "predicate": {
-                        "flags": {"is_swimming": true}
+                        "stepping_on": {
+							"block": {
+								"blocks": [
+									"bubble_column"
+								]
+							}
+						}
                     }
                 }
             ]
 		}
-	]
+		]
 }
 

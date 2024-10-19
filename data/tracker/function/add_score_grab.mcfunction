@@ -1,5 +1,5 @@
 execute as @s at @s run playsound block.note_block.chime hostile @a ~ ~ ~ 2
-execute as @s run function tracker:store_position
+execute as @s if entity @s[tag=!moving] run function tracker:store_position
 
 execute if entity @s[team=cyan] as @p[team=cyan] run scoreboard players add @s Score 1
 execute if entity @s[team=blue] as @p[team=blue] run scoreboard players add @s Score 1
