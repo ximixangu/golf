@@ -1,25 +1,60 @@
 {
-	"condition": "minecraft:entity_properties",
-	"entity": "this",
-	"predicate": {
-		"stepping_on": {
-			"block": {
-				"blocks": [
-					"minecraft:moss_carpet",
-					"orange_carpet",
-					"white_carpet",
-					"lime_carpet",
-					"sandstone_slab",
-					"sandstone_stairs",
-					"minecraft:moss_block",
-					"minecraft:packed_ice",
-					"minecraft:white_concrete_powder",
-					"minecraft:lime_concrete_powder",
-					"minecraft:orange_concrete_powder",
-					"iron_trapdoor",
-					"oak_trapdoor"
-				]
+	"condition": "minecraft:all_of",
+	"terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"stepping_on": {
+					"block": {
+						"blocks": [
+							"minecraft:moss_carpet",
+							"orange_carpet",
+							"white_carpet",
+							"lime_carpet",
+							"sandstone_slab",
+							"sandstone_stairs",
+							"minecraft:moss_block",
+							"minecraft:packed_ice",
+							"minecraft:white_concrete_powder",
+							"minecraft:lime_concrete_powder",
+							"minecraft:orange_concrete_powder",
+							"iron_trapdoor",
+							"oak_trapdoor",
+                            "void_air"
+						]
+					}
+				}
 			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"movement": {
+					"horizontal_speed": 0
+				}
+			}
+		},
+        {
+			"condition": "minecraft:any_of",
+            "terms": [
+                {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {"is_on_ground": true}
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {"is_swimming": true}
+                    }
+                }
+            ]
 		}
-	}
+	]
 }
+

@@ -12,12 +12,28 @@
                 "function": "tracker:add_score"                
             },
             "requirements": {
-                "condition": "value_check",
-                "value": {"type": "score", "target": "attacker", "score": "team" },
-                "range": {
-                    "min": {"type": "score", "target": "this", "score": "team"}, 
-                    "max": {"type": "score", "target": "this", "score": "team"}
-                }
+                "condition": "all_of",
+                "terms": [
+                    {
+                        "condition": "value_check",
+                        "value": {"type": "score", "target": "attacker", "score": "team" },
+                        "range": {
+                            "min": {"type": "score", "target": "this", "score": "team"}, 
+                            "max": {"type": "score", "target": "this", "score": "team"}
+                        }
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": 
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Tags:[\"moving\"]}"
+                                }
+                            }
+                    }
+                ]
             }
         }]
     },
