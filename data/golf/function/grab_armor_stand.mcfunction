@@ -6,3 +6,4 @@ execute if entity @s[team=red] as @e[tag=ball,team=red] run function tracker:add
 execute if entity @s[team=pink] as @e[tag=ball,team=pink] run function tracker:add_score_grab
 execute if entity @s[team=black] as @e[tag=ball,team=black] run function tracker:add_score_grab
 execute if entity @s[team=white] as @e[tag=ball,team=white] run function tracker:add_score_grab
+execute if entity @s[team=yellow] as @e[tag=ball,team=yellow] run function tracker:add_score_grab

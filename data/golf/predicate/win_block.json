@@ -1,0 +1,28 @@
+{
+	"condition": "minecraft:all_of",
+	"terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "stepping_on": {
+                    "block": {
+                        "blocks": [
+                            "oak_trapdoor",
+                            "glowstone"
+                        ]
+                    }
+                }
+            }
+        },
+		{
+			"condition": "minecraft:location_check",
+			"offsetY": -1,
+			"predicate": {
+				"block": {
+					"blocks": "minecraft:glowstone"
+				}
+			}
+		}
+	]
+}

@@ -8,3 +8,4 @@ execute if entity @s[team=red] as @p[team=red] run scoreboard players add @s Sco
 execute if entity @s[team=pink] as @p[team=pink] run scoreboard players add @s Score 1
 execute if entity @s[team=black] as @p[team=black] run scoreboard players add @s Score 1
 execute if entity @s[team=white] as @p[team=white] run scoreboard players add @s Score 1
+execute if entity @s[team=yellow] as @p[team=yellow] run scoreboard players add @s Score 1

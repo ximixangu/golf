@@ -1,78 +1,116 @@
 {
-	"condition": "any_of",
+	"condition": "all_of",
 	"terms": [
 		{
-			"condition": "minecraft:all_of",
-			"terms": [
-				{
-					"condition": "minecraft:inverted",
-					"term": {
-						"condition": "minecraft:entity_properties",
-					"entity": "this",
-					"predicate": {
-						"stepping_on": {
-							"block": {
-								"blocks": [
-									"minecraft:moss_carpet",
-									"orange_carpet",
-									"white_carpet",
-									"lime_carpet",
-									"sandstone_slab",
-									"sandstone_stairs",
-									"minecraft:moss_block",
-									"minecraft:packed_ice",
-									"minecraft:white_concrete_powder",
-									"minecraft:lime_concrete_powder",
-									"minecraft:orange_concrete_powder",
-									"iron_trapdoor",
-									"oak_trapdoor",
-									"air",
-									"bubble_column",
-									"void_air"
-								]
-							}
-						}
-					}
-					}
-				},
-				{
-					"condition": "minecraft:entity_properties",
-					"entity": "this",
-					"predicate": {
-						"movement": {
-							"horizontal_speed": 0
-						}
-					}
-				},
-				{
-					"condition": "minecraft:entity_properties",
-					"entity": "this",
-					"predicate": {
-						"flags": {"is_on_ground": true}
-					}
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"movement": {
+					"horizontal_speed": 0
 				}
-			]
+			}
 		},
 		{
-			"condition": "minecraft:all_of",
+			"condition": "any_of",
 			"terms": [
 				{
-					"condition": "minecraft:entity_properties",
-					"entity": "this",
-					"predicate": {
-						"stepping_on": {
-							"block": {"blocks": "water"}
+					"condition": "minecraft:all_of",
+					"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"stepping_on": {
+									"block": {
+										"blocks": [
+											"moss_carpet",
+											"orange_carpet",
+											"white_carpet",
+											"lime_carpet",
+											"sandstone_slab",
+											"sandstone_stairs",
+											"minecraft:moss_block",
+											"minecraft:packed_ice",
+											"minecraft:white_concrete_powder",
+											"minecraft:lime_concrete_powder",
+											"minecraft:orange_concrete_powder",
+											"iron_trapdoor",
+											"air",
+											"bubble_column",
+											"void_air"
+										]
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"flags": {"is_on_ground": true}
 						}
 					}
+					]
 				},
 				{
-					"condition": "minecraft:entity_properties",
-					"entity": "this",
-					"predicate": {
-						"movement": {
-							"horizontal_speed": 0
+					"condition": "minecraft:all_of",
+					"terms": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"stepping_on": {
+									"block": {"blocks": "water"}
+								}
+							}
 						}
-					}
+					]
+				},
+				{
+					"condition": "all_of",
+					"terms": [
+						{
+							"condition": "entity_properties",
+							"entity": "this",
+							"predicate": {
+								"stepping_on": {
+									"block": {
+										"blocks": "moss_carpet"
+									}
+								}
+							}
+						},
+						{
+							"condition": "inverted",
+							"term": {
+								"condition": "location_check",
+								"offsetY": -1,
+								"predicate": {
+									"block": {
+										"blocks": [
+											"orange_carpet",
+											"white_carpet",
+											"lime_carpet",
+											"sandstone_slab",
+											"sandstone_stairs",
+											"minecraft:moss_block",
+											"minecraft:packed_ice",
+											"minecraft:white_concrete_powder",
+											"minecraft:lime_concrete_powder",
+											"minecraft:orange_concrete_powder",
+											"iron_trapdoor",
+											"air",
+											"bubble_column",
+											"void_air"
+										]
+									}
+								}
+							}
+						}
+					]
 				}
 			]
 		}
