@@ -18,7 +18,7 @@
                         "condition": "value_check",
                         "value": {"type": "score", "target": "attacker", "score": "team" },
                         "range": {
-                            "min": {"type": "score", "target": "this", "score": "team"}, 
+                            "min": {"type": "score", "target": "this", "score": "team"},
                             "max": {"type": "score", "target": "this", "score": "team"}
                         }
                     },
