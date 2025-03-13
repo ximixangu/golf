@@ -9,7 +9,7 @@
             "affected": "victim",
             "effect": {
                 "type": "run_function",
-                "function": "tracker:add_score"                
+                "function": "golf:enchantments/club_hit"                
             },
             "requirements": {
                 "condition": "all_of",
