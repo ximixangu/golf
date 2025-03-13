@@ -4,7 +4,7 @@
         "text": "Knockup I"
     },
     "effects": {
-        "minecraft:post_attack": [{
+        "post_attack": [{
             "enchanted": "attacker",
             "affected": "victim",
             "effect": {

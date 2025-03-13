@@ -4,7 +4,7 @@
         "text": "Armor Stander"
     },
     "effects": {
-        "hit_block": [{
+        "minecraft:hit_block": [{
             "effect": {
                 "type": "run_function",
                 "function": "golf:enchantments/summon_stand/summon_stand"       
@@ -34,9 +34,9 @@
         "per_level_above_first": 1
     },
     "slots": [
-        "any"
+        "mainhand"
     ],
-    "supported_items": "#minecraft:enchantable/sword",
+    "supported_items": "fishing_rod",
     "weight": 1,
     "max_level": 1
 }

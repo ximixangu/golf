@@ -22,9 +22,9 @@
         "per_level_above_first": 1
     },
     "slots": [
-        "any"
+        "mainhand"
     ],
-    "supported_items": "#minecraft:enchantable/sword",
+    "supported_items": "stick",
     "weight": 1,
     "max_level": 1
 }
