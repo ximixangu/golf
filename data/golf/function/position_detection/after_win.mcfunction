@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand, tag=ball, tag=!win] run data merge entity @s {Invulnerable:0b}
