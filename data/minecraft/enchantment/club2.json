@@ -15,11 +15,6 @@
                 "condition": "all_of",
                 "terms": [
                     {
-                        "condition": "entity_properties",
-                        "entity": "attacker",
-                        "predicate": {"flags": {"is_on_ground": false}}
-                    },
-                    {
                         "condition": "minecraft:inverted",
                         "term": 
                             {
@@ -29,6 +24,11 @@
                                     "nbt": "{Tags:[\"moving\"]}"
                                 }
                             }
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "attacker",
+                        "predicate": {"flags": {"is_on_ground": false}}
                     }
                 ]
             }
