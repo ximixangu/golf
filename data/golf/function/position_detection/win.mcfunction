@@ -1,4 +1,4 @@
-execute as @e[type=armor_stand, tag=ball, tag=!win, distance=0..10] run data merge entity @s {Invulnerable:1b}
+execute as @e[type=armor_stand, tag=ball, tag=!win, distance=0..5] run data merge entity @s {Invulnerable:1b}
 execute as @s if entity @s[team=black] run function golf:rocket_sfx/black_rocket
 execute as @s if entity @s[team=white] run function golf:rocket_sfx/white_rocket
 execute as @s if entity @s[team=green] run function golf:rocket_sfx/green_rocket
