@@ -6,3 +6,4 @@ execute run scoreboard objectives setdisplay sidebar Score
 
 execute as @a[team=!] run attribute @s generic.attack_damage base set 0.00000000000000000000000000000000000000000000070065
 execute as @a[team=!] run attribute @s generic.attack_speed base set 2.2
+execute as @a[team=!] run attribute @s player.entity_interaction_range base set 0

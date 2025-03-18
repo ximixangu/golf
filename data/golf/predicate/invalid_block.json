@@ -73,13 +73,12 @@
 					"condition": "all_of",
 					"terms": [
 						{
-							"condition": "entity_properties",
-							"entity": "this",
+							"condition": "location_check",
 							"predicate": {
-								"stepping_on": {
-									"block": {
-										"blocks": "moss_carpet"
-									}
+								"block": {
+									"blocks": [
+										"moss_carpet"
+									]
 								}
 							}
 						},

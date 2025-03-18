@@ -1,5 +1,10 @@
 execute if score physics_tick value matches 1 run function golf:physics/physics_tick
 
+execute as @a[tag=is_holding] run scoreboard players add @s exhaustion 1
+
+execute as @a[tag=is_holding, scores={exhaustion=5..}] run attribute @s player.entity_interaction_range base set 3
+execute as @a[tag=is_holding, scores={exhaustion=40..}] run function golf:hold_detection/exhaust_hold
+
 execute as @e[type=armor_stand, tag=slimey] at @s run particle item_slime ~ ~1.5 ~ 0.1 0.2 0.1 1 1 force
 execute as @e[type=armor_stand, tag=slimey] at @s if block ~ ~ ~ powder_snow run tag @s remove slimey
 execute as @e[type=armor_stand, tag=slimey] at @s if block ~ ~ ~ water run tag @s remove slimey

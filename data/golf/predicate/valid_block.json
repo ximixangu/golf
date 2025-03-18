@@ -85,30 +85,6 @@
 							"predicate": {
 								"flags": {"is_on_ground": true}
 							}
-						},
-						{
-							"condition": "location_check",
-							"offsetY": -1,
-							"predicate": {
-								"block": {
-									"blocks": [
-										"orange_carpet",
-											"white_carpet",
-											"lime_carpet",
-											"sandstone_slab",
-											"sandstone_stairs",
-											"minecraft:moss_block",
-											"minecraft:packed_ice",
-											"minecraft:white_concrete_powder",
-											"minecraft:lime_concrete_powder",
-											"minecraft:orange_concrete_powder",
-											"iron_trapdoor",
-											"air",
-											"bubble_column",
-											"void_air"
-									]
-								}
-							}
 						}
 					]
 				}

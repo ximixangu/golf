@@ -8,6 +8,15 @@ scoreboard objectives add velocity.z dummy
 scoreboard objectives add velocity.last.x dummy
 scoreboard objectives add velocity.last.y dummy
 scoreboard objectives add velocity.last.z dummy
+
+scoreboard objectives add holding dummy
+scoreboard objectives add exhaustion dummy
+scoreboard players set @a holding 0
+scoreboard players set @a exhaustion 0
+
+execute as @a run tag @s remove is_holding
+execute as @a run tag @s remove exhausted 
+
 scoreboard objectives add win dummy
 scoreboard players set 1 value 1
 scoreboard players set -1 value -1

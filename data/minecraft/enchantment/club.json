@@ -21,17 +21,6 @@
                             "min": {"type": "score", "target": "this", "score": "team"},
                             "max": {"type": "score", "target": "this", "score": "team"}
                         }
-                    },
-                    {
-                        "condition": "minecraft:inverted",
-                        "term": 
-                            {
-                                "condition": "entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "nbt": "{Tags:[\"moving\"]}"
-                                }
-                            }
                     }
                 ]
             }
@@ -48,7 +37,7 @@
     "slots": [
         "mainhand"
     ],
-    "supported_items": "stick",
+    "supported_items": "#hoes",
     "weight": 1,
     "max_level": 1
 }

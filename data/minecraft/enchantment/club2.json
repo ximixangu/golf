@@ -15,17 +15,6 @@
                 "condition": "all_of",
                 "terms": [
                     {
-                        "condition": "minecraft:inverted",
-                        "term": 
-                            {
-                                "condition": "entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "nbt": "{Tags:[\"moving\"]}"
-                                }
-                            }
-                    },
-                    {
                         "condition": "entity_properties",
                         "entity": "attacker",
                         "predicate": {"flags": {"is_on_ground": false}}
@@ -45,7 +34,7 @@
     "slots": [
         "mainhand"
     ],
-    "supported_items": "stick",
+    "supported_items": "#hoes",
     "weight": 1,
     "max_level": 1
 }
